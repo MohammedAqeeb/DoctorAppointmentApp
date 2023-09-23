@@ -114,7 +114,9 @@ class AppointmentHistoryPreviewScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).popUntil((route) => route.isFirst);
+                    },
                     child: ReuseableText(
                       fontSize: 14.sp,
                       color: Colors.blue,
@@ -136,7 +138,9 @@ class AppointmentHistoryPreviewScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).popUntil((route) => route.isFirst);
+                    },
                     child: ReuseableText(
                       fontSize: 14.sp,
                       color: Colors.white,
